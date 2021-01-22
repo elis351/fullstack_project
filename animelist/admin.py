@@ -5,9 +5,9 @@ from .models import *
 class SubscriberAdmin (admin.ModelAdmin):
     list_display = [field.name for field in Subscriber._meta.fields]
     list_filter = ['email']
-    search_fields = ['email', 'password']
+    search_fields = ['name', 'email']
 
-    fields = ['email', "password"]
+    fields = ["email"]
 
     class Meta:
         model = Subscriber

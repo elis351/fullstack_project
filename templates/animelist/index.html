@@ -18,16 +18,16 @@
         <div class="container top-container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1 class="title">Register to join Anime List Team!</h1>
+                    <h1 class="title">Submit form to apply Anime List Team!</h1>
                     <div class="reg_div">
                         <form action="" method="post" class="reg_form">{% csrf_token %}
                           <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="{{ form.email.name }}">
+                            <input type="text" class="form-control" id="inlineFormInput" placeholder="Name" name="{{ form.name.name }}">
                           </div>
                           <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="{{ form.password.name }}">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="{{ form.email.name }}">
                           </div>
-                          <button type="submit" class="btn btn-primary btn-orange">Register</button>
+                          <button type="submit" class="btn btn-primary btn-orange">Submit</button>
                         </form>
                     </div>
                 </div>
