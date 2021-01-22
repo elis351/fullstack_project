@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime List</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    <div class="general-container">
+        <div class="container top-container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="title">Register to join Anime List Team!</h1>
+                    <div class="reg_div">
+                        <form action="" method="post" class="reg_form">{% csrf_token %}
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="{{ form.email.name }}">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="{{ form.password.name }}">
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-orange">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
